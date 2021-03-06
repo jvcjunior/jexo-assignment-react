@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Jexo React Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Responsive :heavy_check_mark: 
+- Atlaskit usage :heavy_check_mark: 
+
+The app MUST have:
+- User cards to display user information :heavy_check_mark: 
+- Each user card must show the user's avatar together with other information :heavy_check_mark: 
+- Each user card must have an action bar to allow "Like" or "Delete" actions :heavy_check_mark: 
+- Actions must be functional (if we click on Like or Delete, we expect the actions to be properly executed) :heavy_check_mark: 
+
+We WOULD like the app to have (but not required):
+- Unit tests using Jest :heavy_check_mark: 
+# Getting Started with Jexo Happy Faces App
 
 ## Available Scripts
 
@@ -39,8 +50,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
