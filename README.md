@@ -1,9 +1,9 @@
 # Jexo React Assignment
 
 - Responsive :heavy_check_mark: 
-- Atlaskit usage :heavy_check_mark: 
+- Atlaskit :heavy_check_mark: 
 - Context API, Reducers and Actions :heavy_check_mark: 
-- Style Components :heavy_check_mark: 
+- Styled Components :heavy_check_mark: 
 
 The app MUST have:
 - User cards to display user information :heavy_check_mark: 

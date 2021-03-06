@@ -10,6 +10,7 @@ export interface IUser {
   phone: string;
   website: string;
   company: ICompany;
+  isFavorite?: boolean;
 }
 
   

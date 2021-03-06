@@ -22,9 +22,14 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
 
-  h1 {
-    font-size: 2.5em;
-    font-weight: 700;
+  h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: 0.875em;
+    font-weight: 400;
   }
 
   button {
