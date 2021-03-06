@@ -6,6 +6,7 @@ import CardFooter from './components/CardFooter';
 import CardHeader from './components/CardHeader';
 
 const CardContent = styled.div`
+  border: 1px solid var(--color-gray);
 `;
 
 const Card = ({ user } : { user: IUser }) => {

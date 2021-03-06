@@ -5,7 +5,6 @@ import VidHangUpIcon from '@atlaskit/icon/glyph/vid-hang-up';
 import HomeCircleIcon from '@atlaskit/icon/glyph/home-circle';
 
 const CardBodyItem = styled.div`
-  border: 1px solid rgb(221, 221, 221);
   padding: 1em;
 `;
 

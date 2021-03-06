@@ -15,7 +15,7 @@ const CardFooterButtons = styled.div`
 const CardFooter = () => (
   <CardFooterItem>
     <CardFooterButtons>
-      <Button style={{ width: '100%' }}>
+      <Button style={{ width: '100%'}}>
         <StarLargeIcon label="Xico"/> 
       </Button>
       <Button style={{ width: '100%'}}>

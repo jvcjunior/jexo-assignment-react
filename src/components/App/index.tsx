@@ -5,7 +5,6 @@ import { usersAPI } from '../../services/api';
 import { IUser } from '../../types/IUser';
 import CardGrid from '../CardGrid';
 
-
 const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -18,8 +17,7 @@ const App = () => {
   
   useEffect(() => {
     setLoadingUsers(true);
-    usersAPI
-      .get('/users')
+    usersAPI.get('/users')
       .then(result => result.data)
       .then((users) => {
         setUsers(users);

@@ -11,7 +11,7 @@ const CardGridContent = styled.div`
   grid-template-columns: repeat(1, 1fr);
   gap: 2em;
 
-  @media (min-width: 768px) {
+  @media (min-width: $768px) {
     grid-template-columns: repeat(2, 1fr);
   }  
 
