@@ -10,13 +10,13 @@ const CardContent = styled.div`
 `;
 
 const Card = ({ user } : { user: IUser }) => {
-  const { username, name, email, phone, website } = user;
+  const { id, username, name, email, phone, website } = user;
   const userInfo = { name, email, phone, website };
   return (
     <CardContent>
       <CardHeader username={username} />
       <CardBody userInfo={userInfo} />
-      <CardFooter />
+      <CardFooter userId={id}/>
     </CardContent>
   )
 }
