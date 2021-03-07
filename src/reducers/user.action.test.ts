@@ -1,37 +1,24 @@
-// import { useReducer } from 'react';
-// import moxios from 'moxios'
-// import { act } from '@testing-library/react';
-// import { renderHook } from '@testing-library/react-hooks';
-// import { usersReducer } from './user.reducer';
-// import { getUsers } from './user.action';
-// import axios from 'axios';
-// jest.mock('axios');
+import { useReducer } from 'react';
+import axios from 'axios';
+import { act } from '@testing-library/react';
+import { renderHook } from '@testing-library/react-hooks';
+import { getUsers } from './user.action';
+import { usersReducer } from './user.reducer';
 
-describe('', () => {
-  // beforeEach(() => {
-  //   moxios.install();
-  //   // store = mockStore({});
-  //   // url = "http://localhost:3030";
-  // });
-  // afterEach(() => {
-  //   moxios.uninstall();
-  // });
+jest.mock('axios');
 
-  it('returns new state for "SET_USERS" type using dispatch', () => {
-      // expect.assertions(1);
-      // moxios.stubRequest('https://jsonplaceholder.typicode.com/users', {
-      //   status: 200,
-      //   response: {
-      //     data: [1,2]
-      //   },
-      // });
-      // const { result } = renderHook(() => useReducer(usersReducer, []));
-      // const [, dispatch] = result.current;
-      // act(() => {
-      //   // dispatch({ type: 'SET_USERS', payload: [1, 2, 3]});
-      //   getUsers(dispatch)
-      // });
-      // const [state] = result.current;
-      expect(true).toEqual(true)
+describe('User Action Creator', () => {
+  it('should update state when action [getUsers] is called', async () => {
+      const mockedAxios = axios as jest.Mocked<typeof axios>;
+      mockedAxios.get.mockResolvedValue({ data: [1,2,3] });
+
+      const { result } = renderHook(() => useReducer(usersReducer, []));
+      const [, dispatch] = result.current;
+      await act(async () => {
+        await getUsers(dispatch);
+      });
+      const [state] = result.current;
+      expect(mockedAxios.get).toHaveBeenCalled()
+      expect(state.list).toEqual([1, 2, 3])
   });
 })
