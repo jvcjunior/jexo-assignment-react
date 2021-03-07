@@ -1,6 +1,6 @@
 import { Dispatch } from 'react';
 import { UserActions } from './user.reducer';
-import { usersAPI } from "../services/api";
+// import { usersAPI } from "../services/api";
 import axios from 'axios';
 
 export const getUsers = async (dispatch: Dispatch<any>) => {

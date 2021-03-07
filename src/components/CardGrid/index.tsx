@@ -14,19 +14,19 @@ const CardGridContent = styled.div`
   grid-template-columns: repeat(1, 1fr);
   gap: 2em;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
     grid-template-columns: repeat(2, 1fr);
   }  
 
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.notebook}px) {
     grid-template-columns: repeat(3, 1fr);
   }  
 
-  @media (min-width: 1280px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}px) {
     grid-template-columns: repeat(4, 1fr);
   } 
   
-  @media (min-width: 1536px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.widescreen}px) {
     grid-template-columns: repeat(5, 1fr);
   } 
 `;
