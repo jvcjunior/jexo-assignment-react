@@ -4,6 +4,7 @@
 - Atlaskit :heavy_check_mark: 
 - Context API, Reducers and Actions :heavy_check_mark: 
 - Styled Components :heavy_check_mark: 
+- Live Preview :heavy_check_mark: 
 
 The app MUST have:
 - User cards to display user information :heavy_check_mark: 
@@ -13,6 +14,10 @@ The app MUST have:
 
 We WOULD like the app to have (but not required):
 - Unit tests using Jest :heavy_check_mark: 
+
+# Live Preview
+
+https://jexo-assignment.netlify.app/
 # Getting Started with Jexo Happy Faces App
 
 ## Available Scripts
