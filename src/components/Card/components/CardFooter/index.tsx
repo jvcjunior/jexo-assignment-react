@@ -15,6 +15,14 @@ const CardFooterButtons = styled.div`
   width: 100%;
 `;
 
+const StyledButton = styled(Button)`
+  && {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+  }
+`;
 
 type FooterInfo = {
   id: number; 
@@ -27,19 +35,18 @@ type CardFooterProps = {
 
 const CardFooter = ({ footerInfo } : CardFooterProps ) => {
   const { id, isFavorite } = footerInfo;
-// const CardFooter = ({ userId } : { userId: number }) => {
-  const { state, dispatch } = useContext(AppContext);
+  const { dispatch } = useContext(AppContext);
   
   return (
     <CardFooterItem>
       <CardFooterButtons>
-        <Button style={{ width: '100%'}} onClick={e => {dispatch({type: UserActions.starUser, payload: { id }})}}>
+        <StyledButton onClick={e => {dispatch({type: UserActions.starUser, payload: { id }})}}>
           {isFavorite && <StarFilledIcon label="Star" />  }
           {!isFavorite && <StarLargeIcon label="Star"/> }
-        </Button>
-        <Button style={{ width: '100%'}} onClick={e => {dispatch({type: UserActions.deleteUser, payload: { id }})}}>
+        </StyledButton>
+        <StyledButton onClick={e => {dispatch({type: UserActions.deleteUser, payload: { id }})}}>
           <TrashIcon label="Remove" /> 
-        </Button>
+        </StyledButton>
       </CardFooterButtons>
     </CardFooterItem>
   )

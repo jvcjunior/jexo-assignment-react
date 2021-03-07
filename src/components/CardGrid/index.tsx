@@ -14,7 +14,7 @@ const CardGridContent = styled.div`
   grid-template-columns: repeat(1, 1fr);
   gap: 2em;
 
-  @media (min-width: $768px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }  
 
@@ -22,19 +22,23 @@ const CardGridContent = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }  
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     grid-template-columns: repeat(4, 1fr);
-  }  
+  } 
+  
+  @media (min-width: 1536px) {
+    grid-template-columns: repeat(5, 1fr);
+  } 
 `;
 
   const LoadingContainer = styled.div`
     display: flex;
-    justify-content:center; // centers in the flex direction and the default flex-direction is row
-    align-items:center; // centers perpendicular to the flex direction
-    height: 100vh; // 100% view height
-    width: 100vw; // 100% view width
+    flex-direction: column;
+    justify-content:center; 
+    align-items:center; 
+    height: 100vh; 
+    width: 100vw;
   }`;
-  // position: absolute; // so it goes behind the current content
 
 const CardGrid = () => {
   const { state, dispatch } = useContext(AppContext);
@@ -46,7 +50,7 @@ const CardGrid = () => {
   return (
     <CardGridContainer>
       <CardGridContent>
-        {state.users.loading && <LoadingContainer><Spinner size="xlarge" /></LoadingContainer>}
+        {state.users.loading && <LoadingContainer><Spinner size="xlarge" />Loading...</LoadingContainer>}
         {!state.users.loading && state.users.list.map((user: IUser) => <Card key={user.id} user={user} />)}
       </CardGridContent>
     </CardGridContainer>

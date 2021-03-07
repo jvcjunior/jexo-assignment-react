@@ -16,10 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-  }
-
-  a {
-    color: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   }
 
   h3 {
@@ -30,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   span {
     font-size: 0.875em;
     font-weight: 400;
+    // line-height: 0px;
   }
 
   button {

@@ -10,6 +10,7 @@ const CardBodyItem = styled.div`
 
 const CardBodyRow = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 type UserInfo = {
@@ -31,15 +32,15 @@ const CardBody = ({ userInfo } : CardBodyProps ) => {
         <h3>{name}</h3>
       </CardBodyRow>
       <CardBodyRow>
-        <EmailIcon label="Xico"/> 
+        <EmailIcon label="Email"/> 
         <span>{email}</span>
       </CardBodyRow>
       <CardBodyRow>
-        <VidHangUpIcon label="Xico"/> 
+        <VidHangUpIcon label="Phone"/> 
         <span>{phone}</span>
       </CardBodyRow>
       <CardBodyRow>
-        <HomeCircleIcon label="Xico"/> 
+        <HomeCircleIcon label="Website"/> 
         <a href={`http://${website}`}>{`http://${website}`}</a>
       </CardBodyRow>
     </CardBodyItem>

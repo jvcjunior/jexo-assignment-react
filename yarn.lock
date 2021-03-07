@@ -31,7 +31,7 @@
     "@babel/runtime" "^7.0.0"
     "@emotion/core" "^10.0.9"
 
-"@atlaskit/button@^15.1.4":
+"@atlaskit/button@^15.1.0", "@atlaskit/button@^15.1.4":
   version "15.1.4"
   resolved "https://registry.yarnpkg.com/@atlaskit/button/-/button-15.1.4.tgz#d802c6284915bede449edb44f22e860b771fb995"
   integrity sha512-QlnI8db6a69LgNWjvle2ydoIuAqBBSxRNaOKO5WOzeARJV2H5pWnBU9dKBy+R9173ggPOOF6CXiWG8Hlv6nj7w==
@@ -77,6 +77,16 @@
     "@babel/runtime" "^7.0.0"
     exenv "^1.2.2"
     tiny-invariant "^0.0.3"
+
+"@atlaskit/section-message@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/section-message/-/section-message-5.1.0.tgz#50cc38a663be8bcceaf7f96cb6d901a301c91c39"
+  integrity sha512-tBvHdZDP5Np5zd+dClTSPTdKIOQecZiqposaQp7FuYTh70l+Mx5G48yq38xiXIzFAzZ03Z1vghTxx1KKBNoR/g==
+  dependencies:
+    "@atlaskit/button" "^15.1.0"
+    "@atlaskit/icon" "^21.3.0"
+    "@atlaskit/theme" "^11.0.0"
+    "@babel/runtime" "^7.0.0"
 
 "@atlaskit/spinner@^15.0.0", "@atlaskit/spinner@^15.0.6":
   version "15.0.6"
