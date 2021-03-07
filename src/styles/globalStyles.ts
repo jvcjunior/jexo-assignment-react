@@ -23,7 +23,6 @@ const GlobalStyle = createGlobalStyle`
   span {
     font-size: 0.875em;
     font-weight: 400;
-    // line-height: 0px;
   }
 
   button {

@@ -1,18 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import Avatar from '@atlaskit/avatar';
-
-const CardHeaderItem = styled.div`
-  border: 1px solid ${(props) => props.theme.colors.primary};
-  background-color: ${(props) => props.theme.colors.primary};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+import { CardHeaderItem } from './styles';
+import consts from '../../../../utils/consts';
 
 const CardHeader = ({ username } : { username: string }) => (
     <CardHeaderItem>
-      <Avatar size="xxlarge" src={`https://avatars.dicebear.com/v2/avataaars/${username}.svg?options[mood][]=happy`}/>
+      <Avatar size="xxlarge" src={`${consts.AVATAR_URL}/${username}.svg?options[mood][]=happy`}/>
     </CardHeaderItem>
 )
 

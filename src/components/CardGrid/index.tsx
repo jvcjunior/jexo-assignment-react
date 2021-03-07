@@ -1,44 +1,10 @@
 import Spinner from '@atlaskit/spinner';
 import React, { useContext, useEffect } from 'react';
-import styled from 'styled-components';
 import { AppContext } from '../../context';
 import { getUsers } from '../../reducers/user.action';
 import { IUser } from '../../types/IUser';
 import Card from '../Card';
-
-const CardGridContainer = styled.div`
-  padding: 0 2em;
-`
-const CardGridContent = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2em;
-
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
-    grid-template-columns: repeat(2, 1fr);
-  }  
-
-  @media (min-width: ${(props) => props.theme.breakpoints.notebook}px) {
-    grid-template-columns: repeat(3, 1fr);
-  }  
-
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}px) {
-    grid-template-columns: repeat(4, 1fr);
-  } 
-  
-  @media (min-width: ${(props) => props.theme.breakpoints.widescreen}px) {
-    grid-template-columns: repeat(5, 1fr);
-  } 
-`;
-
-  const LoadingContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content:center; 
-    align-items:center; 
-    height: 100vh; 
-    width: 100vw;
-  }`;
+import { CardGridContainer, CardGridContent, LoadingContainer } from './styles';
 
 const CardGrid = () => {
   const { state, dispatch } = useContext(AppContext);

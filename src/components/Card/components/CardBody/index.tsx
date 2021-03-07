@@ -1,17 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import EmailIcon from '@atlaskit/icon/glyph/email';
 import VidHangUpIcon from '@atlaskit/icon/glyph/vid-hang-up';
 import HomeCircleIcon from '@atlaskit/icon/glyph/home-circle';
-
-const CardBodyItem = styled.div`
-  padding: 1em;
-`;
-
-const CardBodyRow = styled.div`
-  display: flex;
-  align-items: center;
-`;
+import { CardBodyItem, CardBodyRow } from './styles';
 
 type UserInfo = {
   name: string; 

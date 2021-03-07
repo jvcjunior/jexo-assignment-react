@@ -1,28 +1,10 @@
 import React, { useContext } from 'react';
-import styled from 'styled-components';
-import Button from '@atlaskit/button';
 import StarLargeIcon from '@atlaskit/icon/glyph/star-large';
 import StarFilledIcon from '@atlaskit/icon/glyph/star-filled';
 import TrashIcon from '@atlaskit/icon/glyph/trash';
 import { AppContext } from '../../../../context';
 import { UserActions } from '../../../../reducers/user.reducer';
-
-const CardFooterItem = styled.div`
-`;
-
-const CardFooterButtons = styled.div`
-  display: flex;
-  width: 100%;
-`;
-
-const StyledButton = styled(Button)`
-  && {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    line-height: 0px;
-  }
-`;
+import { CardFooterItem, CardFooterButtons, StyledButton } from './styles';
 
 type FooterInfo = {
   id: number; 
